@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is from tutorial</h2>
+    <form action="backend.php" method="post">
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" name="myName" id="name">
+        </div><br>
+        
+        <div>
+            Role: <input type="text" name="myRole">
+        </div><br>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div><br>
+
+        <div>
+            Date: <input type="date" value="myDate">
+        </div><br>
+        
+        <div>
+            Number: <input type="number" name="myNumber">
+        </div>
+
+        <div>
+            Are you eligible: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        
+        <div>
+            Gender: 
+            Male:<input type="radio" name="myGender">
+            Female: <input type="radio" name="myGender">
+            Other: <input type="radio" name="myGender">
+        </div>
+
+        <div>
+            Write your self:<textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option>Select</option>
+                <option value="ind" selected>Indica</option>
+                <option value="swf">Swfit</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+</body>
+</html>

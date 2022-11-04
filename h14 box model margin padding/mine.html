@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Document</title>
+    
+    <style>
+        *{/* This * will be applicable to every element with initial value*/
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: red;
+        }
+       .container{
+            background-color: rgb(135, 190, 248);
+            border: 2px solid black;
+            border-radius: 10px;
+
+            /* margin */
+            margin:33px;    /* All side */
+            
+            margin-top: 2px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-left: 2px;
+
+            margin: 10px 20px; /* x(top/bottom) y(left/right) */
+            
+            margin: 0px 1000px 0px 0px; /*top right bottom left*/
+            
+            width: 255px;
+
+            /* padding */
+            padding:0px 0px; /* Note: Here when i increase padding of box it changes the actual with of that element because width = margin + border + padding  But if you don't want to increase with of element  so use this property*/
+            box-sizing: border-box;/*So, now this property with adjust with according to padding*/
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a optio eligendi dolorum accusamus quisquam, assumenda rerum deserunt est voluptatibus aspernatur dolore quasi neque laborum porro odio et molestias velit?</p>
+    </div>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a optio eligendi dolorum accusamus quisquam, assumenda rerum deserunt est voluptatibus aspernatur dolore quasi neque laborum porro odio et molestias velit?</p>
+    </div>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a optio eligendi dolorum accusamus quisquam, assumenda rerum deserunt est voluptatibus aspernatur dolore quasi neque laborum porro odio et molestias velit?</p>
+    </div>
+</body>
+</html>

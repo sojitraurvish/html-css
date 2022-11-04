@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        /* Position : you can use property right left too 
+        static (default) , 
+        absolute : mean relative to the parent and you can use can use property like (top,bottom,right,left) , 
+        relative : mean relative to its normal position but it can'nt overleap on it's normal position and if you want overlapping so use position:absolute; and you can use can use property like (top,bottom,right,left) ,
+        fixed : fixed mean fixed, 
+        sticky : sticky mean at where you want ro stick the box while scrolling 
+        */ 
+        #box3{
+            /* position: static;*//*by default it is static */
+            position: relative;/*  */
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

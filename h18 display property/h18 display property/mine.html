@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*there are two type of element inline and block and you can set width for block element only for margin auto*/ 
+        /* and in order to change element you can write display: inline;or block;*/ 
+        /* Now if you have inline element and if you want to set width of it and you want your block should be remain inline block so you have one Property called inline-block it also work as inline property but now you can set width for margin auto*/ 
+        header{
+            width: 20%;/*why i am able to set width? because it's block element not inline element*/
+            margin: auto;
+            border: 2px solid red;
+            display: inline-block;
+        }
+        img{
+            width: 34px;
+            /* display:none; it remove space of particular element */
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+        <h3>Welcome to urvish's tutorial</h3>
+        <h3>Welcome to urvish's tutorial</h3>
+    </header>
+    <span>Welcome to urvish's tutorial</span>
+</body>
+</html>
