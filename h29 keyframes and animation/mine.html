@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Flexbox Tuto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .container{
+            background-color: yellow;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+
+            animation-name:urvish1;
+            
+            animation-duration: 2s;
+
+            animation-iteration-count: 1;
+            /* animation-iteration-count: 0.5s; */
+            /* animation-iteration-count: infinite; */
+
+            /* when it end the end result should be as it is */
+            animation-fill-mode: forwards;
+
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+
+            animation-delay: 3s;
+
+            animation-duration:reverse;
+            animation-name:urvish;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes urvish{
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                top:250px;
+                left: 0px;
+            }
+            75%{
+                top:250px;
+                left: 250px;
+            }
+            100%{
+                top:250px;
+                left: 0px;
+            }
+        }
+        @keyframes urvish1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

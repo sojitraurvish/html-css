@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Flexbox Tuto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .box{
+            background-color: red;
+            color: rgb(238, 223, 223);
+            font-size: 72px;
+            text-align: center;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: red;
+            }
+        } 
+
+        @media only screen and (min-width:301px) and (max-width:500px){
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        } 
+
+        @media (min-width:501px) and (max-width:800px){
+            #box-3{
+                display: block;
+                background-color: yellow;
+            }
+        } 
+
+        @media (min-width:801px){
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        } 
+       
+        /* media types in css go on internet and search */
+    </style>
+</head>
+<body>
+   <div class="box" id="box-1">I-phone</div>
+   <div class="box" id="box-2">Tablet</div>
+   <div class="box" id="box-3">Computer</div>
+   <div class="box" id="box-4">Widescreen computer </div>
+</body>
+</html>

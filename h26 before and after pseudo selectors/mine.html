@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Flexbox Tuto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* background: url("https://picsum.photos/id/237/200/300") no-repeat center/cover; */
+        }
+        header::before{
+            content: "";
+            background: url("https://picsum.photos/id/237/200/300") no-repeat center/cover;
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            font-size:20px ;
+            display:flex ;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        section{
+            margin:3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        /* section::before{
+            content: "this is content";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>welcome to coding wold</h1>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sapiente nihil dignissimos quasi optio sequi veritatis velit, ducimus alias, laborum incidunt dolor laboriosam atque enim esse provident blanditiis amet quos?</P>
+        </section>
+        <hr/>
+</body>
+</html>

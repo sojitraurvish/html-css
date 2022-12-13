@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Flexbox Tuto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        
+        .container{
+            font-size: 4px;
+            border: 2px solid red;
+            /*vh and vw takes full height and width*/
+            width: 100vw;
+            height: 100vh;
+        }
+       #first{
+            text-align: center;
+            font-size: 10em;/*meant 10% of it's parent 10*4=40px */
+            padding: 3em;/*now here it takes 40*3=?*/
+       }
+
+       html{
+            font-size: 25px;
+        }
+       #second{
+            /*if suppose someone change it's browser default font size*/
+            /*rem takes with according to top most root element*/
+            text-align: center;
+            font-size: 3rem;/*meant 10% of it's parent 25*3=40px  */
+            padding: 3rem;/*now here it takes 25*3=?*/
+       }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1 id="first">This is first heading</h1>
+    <h1 id="second">This is second heading</h1>
+    <h1 id="third">This is  heading</h1>
+   </div>
+</body>
+</html>
