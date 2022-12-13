@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html tutorial,web development">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <link rel="stylesheet" href="mine.css">
+
+    <script src="mine.js"></script>
+    <title>Flexbox Tuto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+       .container{
+            border: 2px solid black;
+            height: 544px;
+            width:100%;
+            /*initialize the container as flex box*/
+            display: flex;/*1 i have made this parent to flex and it has six item so parent is flex container and child are flex items so now i can apply the property of flex item and flex container in it because i made it's parent to flex container so it's child automatically maid flex items*/
+            /* flex makes child or item to inline */
+
+            /*Property for flex container */ 
+            flex-direction: row;/*this is default value*/
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* Now i want my items to be responsive when i change screen size*/
+            /*flex-wrap: nowrap;*//* by default*/
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            
+            /* Now i want to set both property together flex-direction and flex-wrap*/
+            /* flex-flow: row wrap; */
+
+            /*In order to horizontally center all the items */
+            /*justify-content: center;*/             /*   |||||   */      
+            /*justify-content: space-between;*/      /*| | | | |*/
+            /*justify-content: space-evenly;*/       /* | | | | | */
+            /*justify-content: space-around;*/       /* |  |  |  |  | */
+
+            /*In order to vertically center all the items */
+            align-items: flex-start;/*by default*/
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            align-items: stretch;/*give the equal height vertically*/ 
+
+
+        }
+       .item{
+            width: 200px;/*2*/
+            height: 200px;/*2*/
+
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 3px;
+       }
+       /* Property for flex items */
+       #item-1{
+            /*order property put box in specific order and higher order shows later in container*/
+            order: 3;
+        }
+        #item-2{
+            /* when i increase screen size it grow or take 3 times space as compare to others*/ 
+            flex-grow: 2;
+        
+        }
+        #item-3{
+            flex-grow: 3;
+
+            /* when i decries screen size it grow or take 3 times space as compare to others*/ 
+            flex-shrink: 3;
+        }
+        #item-4{
+            flex-basis: 320px;
+            /* when flex-direction: is set to row flex-basis: will control width */
+            /* when flex-direction: is set to column flex-basis: will control height */
+            
+            /* Now i want to set this three property to gather flex-grow flex-shrink flex-basis */
+            /* flex: 2 2 344px; */
+
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>This is Flexbox</h1>
+   <div class="container">
+       <div class="item" id="item-1">First box</div>
+       <div class="item" id="item-2">Second box</div>
+       <div class="item" id="item-3">Third box</div>
+       <div class="item" id="item-4">Fourth box</div>
+       <!-- <div class="item" id="item-5">Fifth box</div>
+       <div class="item" id="item-6">sixth bod</div> -->
+
+   </div>
+</body>
+</html>
