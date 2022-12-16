@@ -31,22 +31,38 @@
             
             animation-duration: 2s;
 
+            /* for how many time animation will play */
             animation-iteration-count: 1;
             /* animation-iteration-count: 0.5s; */
             /* animation-iteration-count: infinite; */
 
             /* when it end the end result should be as it is */
-            animation-fill-mode: forwards;
+            animation-fill-mode: forwards;/*when your want your end result will be (to in urvish1) when your animation get completed. so, use this property */
+            animation-fill-mode: alternate;/*when your want your end result will be (from in urvish1) when your animation get completed. so, use this property */
 
-            animation-timing-function: ease-in;
-            animation-timing-function: ease-out;
-            animation-timing-function: ease-in-out;
+          
+            animation-timing-function: ease-in;  /* when your animation starts it will slow and then after it increase speed*/
+            animation-timing-function: ease-out; /* when your animation starts it will fast and then after it decrease speed*/
+            animation-timing-function: ease-in-out; /* when your animation starts abd ends it will slow and in between it increase speed*/
 
             animation-delay: 3s;
 
-            animation-duration:reverse;
-            animation-name:urvish;
+            animation-direction:alternate;/*your animation goes to for word*/
+            animation-direction:reverse;/*your animation goes to reverse*/
+            /* animation-direction:alternate-reverse; */
+            /* animation-direction:normal; */
+
+
+            /* animation-name:urvish; */
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes urvish1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
         }
         @keyframes urvish{
             0%{
@@ -66,14 +82,7 @@
                 left: 0px;
             }
         }
-        @keyframes urvish1{
-            from{
-                width: 200px;
-            }
-            to{
-                width: 400px;
-            }
-        }
+        
     </style>
 </head>
 <body>

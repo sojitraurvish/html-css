@@ -18,46 +18,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        body{
+            background-color: black;
         }
-        .container{
+        #box{
             display: flex;
             justify-content: center;
-            height:80vh;
-            background-color: burlywood;
-            align-items: center ;
+            align-items: center;
+            /* align-content: center; spacing == kare */
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: relative;
+            left: 0px;
+            transition-property: all;
+
+            transition-duration: 1s;
+            
+            transition-timing-function: ease-in;
+            /* transition: ease-out; */
+            /* transition: ease-in-out; */
+            
+            transition-delay: 0s;
+            
+            /* transition: background-color 1s ease-in-out 3s; */
+            /* transition: all 1s ease-in-out 0s; */
         }
-      .box{
-        display: flex;
-        justify-content: center;
-        align-items: center ;
-        background-color: brown;
-        border:2px solid black;
-        border-radius: 8px;
-        height: 400px;
-        width: 400px;
-        /* transform: rotate(45deg); */
-
-        /* transform: all 0.5 ease-in-out; */
-        transform:skew(40deg);
-        transform:scale(3);
-
-        transform:translateX(123);
-        transform:translateY(123);
-        transform:translate(123px,123px);
-        
-      }
-      .box:hover{
-        transform: rotate(360deg);
-      }
-
+        #box:hover{
+            background-color: white;
+            width: 500px;
+            
+            /* left: 500px; */
+        }
     </style>
 </head>
 <body>
+    <h3>This is css transition tutorial</h3>
     <div class="container">
-        <div class="box">This is box</div>
+        <div id="box">
+            This is my box
+        </div>
     </div>
 </body>
 </html>
