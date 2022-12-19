@@ -20,16 +20,26 @@
     <style>
        .container{
         display: grid;
+        
+        /* Now i want to create three column of with three measurement of width*/
         /* grid-template-columns: 300px 104px 110px; */
         /* grid-template-columns: 300px auto 150px; */
         /*grid-template-columns: 1fr 4fr 1fr;*//* from hole space give 1fr to first and so on*/
+        
+        /* here i can specify how many column i want of how much width it should contain*/
         grid-template-columns: repeat(10,auto);
-        grid-gap: 2rem;
+
+        /* now i want to give some space between two items */
+        grid-gap: 1rem;
+
+        /* grid-row-gap:2rem;
+            grid-column-gap:2rem; */
        }
        .item{
-
+ 
         background-color: red;
-        margin: 3px;
+        margin: 4px;
+        padding:5px;
         border: 2px solid black;
        }
     </style>
@@ -45,12 +55,12 @@
         <div class="item">This is Item-7</div>
         <div class="item">This is Item-8</div>
         <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
-        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+        <div class="item">This is Item-11</div>
+        <div class="item">This is Item-12</div>
+        <div class="item">This is Item-13</div>
+        <div class="item">This is Item-14</div>
+        <div class="item">This is Item-15</div>
     </div>
 </body>
 </html>

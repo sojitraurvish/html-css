@@ -18,35 +18,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <style>
-        .grid{
+        .grid{/* FR(fr) means hole space give 1fr to first and so on*/
             display:grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows:repeat(4,1fr);
             grid-gap: 1rem;
-            /* grid-row-gap:2rem;
-            grid-column-gap:2rem; */
+            grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "section section section aside"
+            "footer footer footer footer";
         }
        .box{
         background-color: red;
         border:2px solid black;
+        padding:34px;
        }
-       .box:first-child{
-           grid-column: 1 / span 3;
-           grid-row: 1 / span 3;
-
-        /* another weird way of doin  */
-         /* grid-column-start: 1;
-         grid-column-end: 3; */
-
-         /* grid-row-start: 2;
-         grid-row-end: 4; */
-
+       #navbar{
+        grid-area:navbar;
+       }
+       #section{
+        grid-area:section;
+       }
+       #aside{
+        grid-area:aside;
+       }
+       footer{
+        grid-area:footer;
        }
     </style>
 </head>
 <body>
     <div class="grid">
-        <div class="box">This is box-1</div>
+        <div id="navbar" class="box">Home about contect us</div>
+        <div id="section" class="box">section</div>
+        <div id="aside" class="box">aside</div>
+        <footer class="box">footer</footer>
+        <!-- <div class="box">This is box-1</div>
         <div class="box">This is box-2</div>
         <div class="box">This is box-3</div>
         <div class="box">This is box-4</div>
@@ -64,7 +69,7 @@
         <div class="box">This is box-16</div>
         <div class="box">This is box-17</div>
         <div class="box">This is box-18</div>
-        <div class="box">This is box-20</div>
+        <div class="box">This is box-20</div> -->
     </div>
 </body>
 </html>

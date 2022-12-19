@@ -18,29 +18,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
     <style>
-        .grid{
+        .grid{/* FR(fr) means hole space give 1fr to first and so on*/
             display:grid;
-            grid-template-columns: repeat(5,1fr);
-            grid-template-rows:repeat(4,1fr);
+            /* here i have specified 3 size so whatever remaining rows will contain 1fr size */
+            grid-template-rows: 1fr 1fr 4fr;
+            /* but now i want remaining row of size 2fr */
+            grid-auto-rows: 2fr;
+
+
+            grid-template-columns: 1fr 4fr 2fr 1fr;
             grid-gap: 1rem;
-            /* grid-row-gap:2rem;
-            grid-column-gap:2rem; */
+            
         }
        .box{
         background-color: red;
         border:2px solid black;
-       }
-       .box:first-child{
-           grid-column: 1 / span 3;
-           grid-row: 1 / span 3;
-
-        /* another weird way of doin  */
-         /* grid-column-start: 1;
-         grid-column-end: 3; */
-
-         /* grid-row-start: 2;
-         grid-row-end: 4; */
-
        }
     </style>
 </head>
